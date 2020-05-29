@@ -2,20 +2,17 @@ import React from 'react'
 // import ReactDom from 'react-dom'
 import MyHeader from './MyHeader'
 import MyFooter from './MyFooter'
+import TodoItem from './TodoItem'
 
 
 function MyTodo() {
     return (
         <div>
             <MyHeader />
-            <input type='checkbox' />
-            <p> Placeholder for todo</p>
-            <input type='checkbox' />
-            <p> Placeholder for todo</p>
-            <input type='checkbox' />
-            <p> Placeholder for todo</p>
-            <input type='checkbox' />
-            <p> Placeholder for todo</p>
+            <TodoItem/>
+            <TodoItem/>
+            <TodoItem/>
+            <TodoItem/>
             <MyFooter />
         </div>
     )
