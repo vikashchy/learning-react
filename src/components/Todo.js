@@ -3,16 +3,15 @@ import React from 'react'
 import MyHeader from './MyHeader'
 import MyFooter from './MyFooter'
 import TodoItem from './TodoItem'
+import TodoList from'./TodoList'
 
+const todolist= TodoList.map(todo=><TodoItem key={todo.id} text={todo.text}/>)
 
 function MyTodo() {
     return (
         <div>
             <MyHeader />
-            <TodoItem/>
-            <TodoItem/>
-            <TodoItem/>
-            <TodoItem/>
+            <table>{todolist}</table>
             <MyFooter />
         </div>
     )
